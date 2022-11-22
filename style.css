@@ -1,0 +1,8 @@
+*{
+    padding:2px;
+    box-sizing:border-box;
+    margin: 2px;
+}
+body{
+    background-attachment:scroll;
+}
