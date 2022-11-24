@@ -13,7 +13,8 @@ async function books(){
             let authors = details.authors[0];
             let publisher = details.publisher;
             let release_date = details.released;
-            let result=document.getElementById("bookshelf")
+            let result=document.getElementById("books")
+            let nav=document.getElementById("nav1")
             let result1=`
             <div class="container text-center">
               <div class="row row-cols-2">
@@ -45,3 +46,11 @@ async function books(){
 }
 
 books()
+
+const body = document.body
+const nav = document.createElement("nav")
+body.append(nav)
+const div =document.createElement("div")
+body.append(div)
+div.setAttribute("id","books")
+nav.setAttribute("id","nav1")
